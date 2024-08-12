@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='venvwatch',
-    version='0.5',
+    version='0.6',
     description='Automatically updates requirements.txt by watching your virtual environment for changes',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
@@ -14,7 +14,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'venvwatch = venvwatch.main:main',
+            'venvwatch = venvwatch.cli:main',  # Changed from main to cli
         ],
     },
     classifiers=[
